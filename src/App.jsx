@@ -16,7 +16,7 @@ function App() {
       <DrawerComp isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
       <Header isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
       <Home />
-      <MyLife />
+      {/* <MyLife /> */}
       <Skills />
       <Projects />
       <Footer />
