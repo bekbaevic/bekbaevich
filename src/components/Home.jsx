@@ -9,7 +9,7 @@ const Home = () => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
-    <div id='#' className='relative max-h-[calc(100vh-70px)] min-h-[calc(100vh-70px)] mx-auto flex items-center gap-10'>
+    <div id='#' className='relative pb-20 pt-10 sm:px-0 sm:max-h-[calc(100vh-70px)] sm:min-h-[calc(100vh-70px)] mx-auto flex items-center gap-10'>
       <div className='flex items-center flex-col w-full'>
         <motion.img initial={{ opacity: 0, translateX: "30%" }} animate={{ opacity: 1, translateX: 0, }} transition={{ duration: 2, delay: 0.5 }} src={yellowLogo} className='w-[250px] drop-shadow-lg mb-5' />
         <motion.h1
