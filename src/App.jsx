@@ -7,7 +7,7 @@ import MyLife from './components/MyLife'
 import Skills from './components/Skills'
 import { useLocation } from 'react-router-dom'
 import { useLayoutEffect } from 'react'
-import ProjectsComponent from './components/Projects'
+import ProjectsComponent from './components/ProjectsComponent'
 
 function App() {
   const { isOpen, onOpen, onClose } = useDisclosure()
