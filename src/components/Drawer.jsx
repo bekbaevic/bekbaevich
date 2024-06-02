@@ -17,11 +17,11 @@ const DrawerComp = ({ isOpen, onOpen, onClose }) => {
             title: "Home",
             path: "#"
         },
-        {
-            icon: <IoPlanetOutline />,
-            title: "About me",
-            path: "#about"
-        },
+        // {
+        //     icon: <IoPlanetOutline />,
+        //     title: "About me",
+        //     path: "#about"
+        // },
         {
             icon: <MdOutlineLightbulb />,
             title: "Skills",

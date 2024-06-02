@@ -23,11 +23,11 @@ const Header = ({ isOpen, onOpen, onClose }) => {
       title: "Home",
       path: "#"
     },
-    {
-      icon: <IoPlanetOutline />,
-      title: "About me",
-      path: "#about"
-    },
+    // {
+    //   icon: <IoPlanetOutline />,
+    //   title: "About me",
+    //   path: "#about"
+    // },
     {
       icon: <MdOutlineLightbulb />,
       title: "Skills",
@@ -50,7 +50,7 @@ const Header = ({ isOpen, onOpen, onClose }) => {
   return (
     <>
       <Box className='sticky top-0 left-0 right-0 h-[70px] flex items-center justify-between px-[20px] sm:px-0 sm:justify-center w-full z-10 backdrop-blur-sm' style={colorMode === 'light' ? { backgroundColor: "#ffffff90" } : { backgroundColor: "#1A202C99" }}>
-        <button className='sm:hidden text-[20px] active:scale-90'onClick={onOpen} >
+        <button className='sm:hidden text-[20px] active:scale-90' onClick={onOpen} >
           <GiHamburgerMenu />
         </button>
         <Box className='flex items-center gap-5'>
@@ -58,9 +58,6 @@ const Header = ({ isOpen, onOpen, onClose }) => {
             {headerMenuData.map(item => (
               <a href={item.path} onClick={() => setSelectedItem(item.title)} key={item.title} to={item.path} className='hidden relative px-4 py-1 rounded-sm sm:flex items-center transition-all duration-300'>
                 <span className='text-[14px] sm:text-[16px]' style={colorMode === 'light' ? { color: "#1A202C" } : { color: "white" }}>{item.title}</span>
-                {item.title === selectedItem ?
-                  <motion.div className="absolute bottom-0 left-0 right-0 h-[1px]" style={colorMode === 'light' ? { backgroundColor: "#1A202C" } : { backgroundColor: "white" }} layoutId="underline" /> : null
-                }
               </a>
             ))}
           </ul>

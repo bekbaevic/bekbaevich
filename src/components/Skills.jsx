@@ -24,8 +24,8 @@ const Skills = () => {
       <h1 className='text-[32px] font-[600] mb-5'>Skills</h1>
       <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-5'>
         {SkillsX.map(item => (
-          <motion.div initial='offscreen' whileInView='onscreen' viewport={{ once: true, amount: 0.8 }} transition={{ delay: item.delay }} className='cursor-pointer hover:scale-[101.5%] transition duration-300 text-white'>
-            <motion.div variants={cardVariants(item.delay)} style={{ backgroundColor: item.color }} className='p-5 rounded-md flex flex-col justify-between items-center' key={item.title}>
+          <motion.div initial='offscreen' whileInView='onscreen' viewport={{ once: true, amount: 0.8 }} transition={{ delay: item.delay }} className='cursor-pointer hover:scale-[101.5%] transition duration-300 text-white' key={item.title}>
+            <motion.div variants={cardVariants(item.delay)} style={{ backgroundColor: item.color }} className='p-5 rounded-md flex flex-col justify-between items-center'>
               <div className='flex flex-col sm:flex-row  sm:gap-2 items-center w-full md:py-5'>
                 <p className='text-[32px] md:text-[53px]'>{item.icon}</p>
                 <p className='md:text-[20px] font-[600] whitespace-nowrap	'>{item.title}</p>
