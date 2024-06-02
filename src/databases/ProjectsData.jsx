@@ -11,7 +11,6 @@ import usersDashboard from "../images/project_images/usersDashboard.png";
 import tetris from "../images/project_images/tetris.png";
 import weather from "../images/project_images/weather.png";
 import kiyimKenshek from "../images/project_images/kiyim-kenshek.png"
-import { delay } from "framer-motion";
 export const ProjectsData = [
   {
     id: 122,
@@ -22,7 +21,7 @@ export const ProjectsData = [
     delay: 0.3
   },
   {
-    id: 121,
+    id: 121, 
     image: usersDashboard,
     url: "https://users-dashboard-ebon.vercel.app/",
     title: "Users dashboard",
@@ -42,7 +41,7 @@ export const ProjectsData = [
     image: onlineShop,
     url: "https://onlineshop-dusky.vercel.app/",
     title: "Online shop",
-    category: "shop"
+    category: "shop",
   },
   {
     id: 6,

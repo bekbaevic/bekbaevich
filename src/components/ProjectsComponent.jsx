@@ -1,4 +1,3 @@
-import { createClient } from 'pexels'
 import React from 'react'
 import { ProjectsData } from '../databases/ProjectsData'
 import { useColorMode } from '@chakra-ui/react'
@@ -41,7 +40,7 @@ const ProjectsComponent = () => {
         ))}
       </div>
       <div className='text-center my-10'>
-        <NavLink to={'projects'} className='text-center  hover:tracking-widest transition-all duration-300 w-fit'>See all projects</NavLink>
+        <NavLink to={'projects'} className='text-center hover:tracking-widest transition-all duration-300 w-fit'>See all projects</NavLink>
       </div>
     </div>
   )
