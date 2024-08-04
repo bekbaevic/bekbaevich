@@ -10,7 +10,7 @@ import restCountries from "../images/project_images/restCountries.png";
 import usersDashboard from "../images/project_images/usersDashboard.png";
 import tetris from "../images/project_images/tetris.png";
 import weather from "../images/project_images/weather.png";
-import kiyimKenshek from "../images/project_images/kiyim-kenshek.png"
+import books from "../images/project_images/books.png"
 export const ProjectsData = [
 
   {
@@ -31,9 +31,9 @@ export const ProjectsData = [
   },
   {
     id: 2,
-    image: form,
-    url: "https://sparkly-basbousa-e01fbb.netlify.app/",
-    title: "Form Component",
-    category: "components"
+    image: books,
+    url: "books-bice-nine.vercel.app",
+    title: "Books Dashboard",
+    category: "dashboard"
   },
 ];
